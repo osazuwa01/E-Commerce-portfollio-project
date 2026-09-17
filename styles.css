@@ -96,13 +96,9 @@ h2 {
     margin-bottom: 32px;
 }
 
-h3 {
-    font-size: 32px;
-    text-align: center;
-    padding: 8px;
-    margin-bottom: 24px;
-    border-radius: 4px;
+.btn {
     background-color: #7342d6;
-    max-width: fit-content;
-    margin: 15px auto;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
 }
