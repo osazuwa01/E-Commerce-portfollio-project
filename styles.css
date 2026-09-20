@@ -69,7 +69,7 @@ li {
 }
 
 header {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
 }
 
 .header__container {
@@ -81,6 +81,8 @@ header {
     flex-direction: column;
     justify-content: space-around;
 }
+
+.container
 
 .header__description {
     display: flex;
@@ -114,6 +116,8 @@ button:active {
     transform: translateY(1px);
 }
 .btn {
+    display: block;
+    margin: 0 auto;
     background-color: #7342d6;
     color: white;
     padding: 12px 24px;
@@ -123,6 +127,28 @@ button:active {
 }
 
 .header__img--wrapper {
-    margin-top: 190px;
-    padding: 20px;
+    margin-top: 100px;
+    padding: 0;
+}
+
+.container {
+    padding: 56px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/*
+
+HIGHLIGHTS
+
+*/
+
+.highlight__wrapper {
+    display: flex;
 }
