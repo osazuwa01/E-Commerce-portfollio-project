@@ -147,8 +147,9 @@ HIGHLIGHTS
 
 */
 
-#hightlights {
+#highlights {
   position: relative;
+  background-color: white;
 }
 
 #highlights::before {
@@ -165,32 +166,32 @@ HIGHLIGHTS
     z-index: 1; */
 }
 
-.hightlights::before {
-  background: url("assets/wave.svg");
-  content: "";
-  position: absolute;
-  width: 101vw;
-  height: 12vw;
-  top: 1px;
-  left: 0;
-  z-index: 1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: rotateY(-100%);
+#highlight::before {
+    background: url("assets/wave.svg");
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    top: 0x;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(-99%);
+    z-index: 1;
 }
 
-#highlights::after {
-  background: url("assets/wave.svg");
-  content: "";
-  position: absolute;
-  width: 101vw;
-  height: 12vw;
-  bottom: 1px;
-  left: 0;
-  z-index: 1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: rotateY(100%);
+#highlight::after {
+    background: url("assets/wave.svg");
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    top: 0x;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(-99%);
+    z-index: 1;
 }
 
 .highlight__wrapper {
@@ -225,8 +226,18 @@ HIGHLIGHTS
 }
 
 .highlight__para {
-  text-align: center;
-  width: 300px;
-  max-width: 290px;
-  margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    max-width: 290px;
+    margin: 0 auto;
+}
+
+/* 
+
+FEATURES 
+
+*/
+
+#features {
+    background-color: rgba(115, 66, 214, 0.1);
 }
