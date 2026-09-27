@@ -246,6 +246,21 @@ FEATURES
 */
 
 #features {
-  height: 1000px;
+  padding-top: 8vw;
+  height: 1200px;
   background-color: rgba(115, 66, 214, 0.1);
+  margin: 0;
+}
+
+.books {
+  display: flex;
+  padding: 24px;
+}
+
+.book {
+  width: 35%;
+  padding: 24px;
+}
+.book__img {
+  max-height: 380px;
 }
