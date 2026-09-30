@@ -261,10 +261,21 @@ FEATURES
 }
 .book__img {
   max-height: 380px;
+  transition: all 300ms ease;
+  cursor: no-drop;
 }
 
 .book__img--wrapper {
   margin-bottom: 8px;
   border-radius: 4px;
   overflow: hidden;
+  display: flex;
+}
+
+.book:hover .book__img {
+  transform: scale(1.03);
+}
+
+.book__title {
+  font-size: 20px;
 }
