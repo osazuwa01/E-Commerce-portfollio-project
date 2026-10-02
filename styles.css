@@ -252,11 +252,12 @@ FEATURES
 
 .books {
   display: flex;
+  flex-wrap: wrap;
   padding: 24px;
 }
 
 .book {
-  width: 35%;
+  width: 25%;
   padding: 24px;
 }
 .book__img {
