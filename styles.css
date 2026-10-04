@@ -24,6 +24,14 @@ p {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .nav__container {
   width: 100%;
   display: flex;
@@ -144,6 +152,16 @@ button:active {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.row__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-cursor {
+  cursor: not-allowed;
 }
 
 /*
@@ -296,4 +314,51 @@ FEATURES
   text-decoration: line-through;
   padding-right: 6px;
   color: #bfbfbf;
+}
+
+/*  
+
+EXPLORE 
+
+*/
+
+#explore {
+  background-color: rgba(115, 66, 214, 0.1);
+}
+
+/*  
+
+FOOTER
+
+*/
+
+
+footer {
+  background-color: #242424;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo--img {
+  width: 160px;
+  filter: grayscale(1) invert(1);
+  margin-bottom: 24px;
+}
+
+.footer__link,
+.footer__copyright {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer__list {
+  margin: 24px 24px 0;
+  padding: 16px;
+}
+
+.footer__link {
+  padding: 0 8px;
 }
