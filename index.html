@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/8e452d34db.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -17,8 +18,27 @@
           <img class="logo" src="/Library.svg" alt="" />
           <ul class="nav__links">
             <li><a href="#" class="nav__link">Home</a></li>
-            <li><a href="#" class="nav__link">Contact</a></li>
-            <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+            <li><a href="#features" class="nav__link">Books</a></li>
+            <li><a href="#" class="nav__link nav__link--primary">Contacts</a></li>
+          </ul>
+        </div>
+        <button class="btn__menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link">Home</a>
+            </li>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link">Books</a>
+              <li class="menu__list">
+                <a class="menu__link no-cursor">Contacts</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -307,10 +327,11 @@
       
       <section id="explore">
         <div class="container">
-          <div class="row">
+          <div class="row row__column">
             <h2>Explore more <span class="purple">books</span></h2>
-            <button class="btn">Browse books</button>
-          </div>
+            <a href="#features">
+              <button class="btn">Browse books</button>
+            </a>
           </div>
         </div>
       </section>
