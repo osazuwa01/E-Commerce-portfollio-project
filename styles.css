@@ -289,13 +289,14 @@ HIGHLIGHTS
 
 .highlight__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .highlight {
   padding: 0 24px;
+  width: calc(100% / 3);
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -320,7 +321,7 @@ HIGHLIGHTS
 
 .highlight__para {
   text-align: center;
-  width: 300px;
+  width: 100%;
   max-width: 290px;
   margin: 0 auto;
 }
@@ -431,7 +432,31 @@ footer {
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  .header__description {
+    padding: 0 24px;
 
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  .book {
+    width: 50%;
+    padding: 12px;
+  }
+}
+
+/*SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
   .nav__links {
     display: none;
@@ -439,5 +464,18 @@ footer {
 
   .btn__menu {
     display: block;
+  }
+
+  .highlight {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  #highlights .container {
+    padding-bottom: 4px;
+  }
+
+  .highlight:not(:last-child) {
+    margin-bottom: 24px;
   }
 }
